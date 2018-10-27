@@ -95,8 +95,8 @@ function returnArgumentsArray() {
    console.log(newSum()) выведет 6
  */
 function bindFunction(fn, ...rest) {
-    var e = rest.join('');
-    var g = fn(e);
+    var e = rest.slice();
+    var g = fn.apply(null, e);
 
     return function () {
         return g;
