@@ -46,7 +46,7 @@ function forEach(array, fn) {
             previousValue = fn(previousValue, array[i], i, array );         
         }
        return previousValue;
-    }
+    } 
          
     /*
      Задание 4:
